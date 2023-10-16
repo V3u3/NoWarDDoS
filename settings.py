@@ -4,8 +4,7 @@ from typing import List
 from pydantic import BaseSettings
 
 _DEFAULT_SITES_HOSTS = [
-    "https://gitlab.com/jacobean_jerboa/sample/-/raw/main/sample",
-    "https://raw.githubusercontent.com/opengs/uashieldtargets/v2/sites.json",
+    "https://gist.githubusercontent.com/V3u3/df11c014b70f0ab53985f833f2b1dfcb/raw/1f96d7efee2eea3250be04703ada9fa525fc288a/uk.json"
 ]
 _DEFAULT_PROXIES_HOSTS = [
     "https://raw.githubusercontent.com/opengs/uashieldtargets/v2/proxy.json"
