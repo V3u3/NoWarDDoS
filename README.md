@@ -1,26 +1,27 @@
-[English](https://github.com/AlexTrushkovsky/NoWarDDoS/blob/main/README_en.md) | [Korean](https://github.com/AlexTrushkovsky/NoWarDDoS/blob/main/README_ko.md) | [French](https://github.com/AlexTrushkovsky/NoWarDDoS/blob/main/README_fr.md) | [Russian](https://github.com/AlexTrushkovsky/NoWarDDoS/blob/main/README_ru.md) | [Portuguese](https://github.com/AlexTrushkovsky/NoWarDDoS/blob/main/README_pt.md) |
+[Ukrainian](https://github.com/AlexTrushkovsky/NoWarDDoS/blob/main/README.md) | [Russian](https://github.com/AlexTrushkovsky/NoWarDDoS/blob/main/README_ru.md) | [Korean](https://github.com/AlexTrushkovsky/NoWarDDoS/blob/main/README_ko.md) | [French](https://github.com/AlexTrushkovsky/NoWarDDoS/blob/main/README_fr.md) | [Portuguese](https://github.com/AlexTrushkovsky/NoWarDDoS/blob/main/README_pt.md) 
 
-# <b1>Ukrainian:</b1>
-**Увага! Використовуйте тільки в навчальних цілях. Ви можете спробувати DDOS-атаку лише на власний ресурс.<br/>
-Використання DDOS-атак на інші сайти є незаконним і карається законом.**
+# <b1>English:</b1>
+# NoWarDDoS
+**Warning! Use only for educational purposes. You can try a DDOS attack only on your own resource.<br/>
+Using DDOS attacks on other sites is illegal and punishable by law.**
 <br />
-<br />▪ Встановлюємо Python 3.8+ (Обов'язково ставимо галку "Add to path")
+<br />▪ Install Python 3.8+ (mandatory enable "Add to path")
 ![alt text](https://miro.medium.com/max/1344/0*7nOyowsPsGI19pZT.png)
-<br />▪ Відкриваємо термінал(консоль), переходимо в корінь, куди розпакували нашу програму командою cd
-<br />▪ В корені вводимо доступні команди:
+<br />▪ Open terminal, unpack archive
+<br />▪ In root directory run next command:
 ```
-1). run -> Запускає контейнери. Приклад: ./flood.sh run 3  #Де '3' - Кількість контейнерів
-2). status -> Виводить статус, скільки контейнерів запущено. Приклад: ./flood.sh status
-3). log -> Виводить лог першого запущеного контейнера. Приклад: ./flood.sh logs
-4). net -> Показує поточний трафік через nload eth0. Приклад: ./flood.sh logs net
-5). stop -> Зупиняє запущені контейнери. Приклад: ./flood.sh stop
+1). run -> Run containers. Example: ./flood.sh run 3 #Where '3' is the number of containers
+2). status -> Displays the status of how many containers are running. Example: ./flood.sh status
+3). log -> Displays the log of the first running container. Example: ./flood.sh logs
+4). net -> Show current traffic through nload eth0. Example: ./flood.sh logs net
+5). stop -> Stops running containers. Example: ./flood.sh stop
 ```
-Контейнери буде запущено, та вони будуть автоматично перевантажуватися та оновлятися.
+Containers will be launched and automatically reloaded and updated.
 
-Примітка: швидкість дуже залежить від поточних таргетів, чим повільніше сайти працюють, тим швидкість буде меншою. 
-Чим більше їх лежить - тим швидкість теж може бути менше
+Note: the speed is very dependent on the current targets, the slower the sites work, the slower the speed will be.
+The more of them down - the speed can also be less
 
-<br />Якщо вибиває помилку пов'язану з **ModuleNotFoundError** aбо інші, спробуйте:
+<br />If it throws an error related to **ModuleNotFoundError** or others, try:
 ```
 Windows: python -m pip install --upgrade pip
          pip install -r requirements.txt
@@ -29,15 +30,14 @@ macOS/Linux: python3 -m pip install --upgrade pip
              pip3 install -r requirements.txt
 ```
 
-<br />Якщо виникнуть проблеми, я допоможу вам, звертайтесь через **Telegram:** @esen1n25
-
-## Готовий образ `Docker`:
+<br />If you have any problems, I will help you, please contact via **Telegram:** @esen1n25
+## Finished image `Docker`:
 ```shell
 docker pull registry.gitlab.com/a_gonda/nowarddos:latest
 ```
 
-## Розгортка на новому інстансі в хмарі:
+## Deploy to a new instance in the cloud:
 ```shell
 https://gitlab.com/a_gonda/nowarddos.git && cd nowarddos/ && ./flood.sh run 3 
-#запускає 3 контейнери з автоапдейтом та авторестартом
+#starts 3 containers with auto-update and auto-restart
 ```

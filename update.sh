@@ -12,19 +12,19 @@ fi
 
 echo "Update is required. Server version is $server_version. Local version is $local_version"
 
-cd "$( dirname "$1" )" # parent dir of python script
-git clone "https://gitlab.com/a_gonda/nowarddos.git" "tmp" || exit 1
-kill -9 $(pgrep python3) &> /dev/null
+# cd "$( dirname "$1" )" # parent dir of python script
+# git clone "https://gitlab.com/a_gonda/nowarddos.git" "tmp" || exit 1
+# kill -9 $(pgrep python3) &> /dev/null
 
-rm -rf "$1"
-mv "tmp" "$1"
+# rm -rf "$1"
+# mv "tmp" "$1"
 
-rm -rf ../logs && \
-mkdir -p ../logs && touch ../logs/nowar.log && \
+# rm -rf ../logs && \
+# mkdir -p ../logs && touch ../logs/nowar.log && \
 
-cd "$1"
-# for migration from docker to direct python run: stop currently running containers, if any
-docker-compose -f docker-compose.yml down &> /dev/null
+# cd "$1"
+# # for migration from docker to direct python run: stop currently running containers, if any
+# docker-compose -f docker-compose.yml down &> /dev/null
 
-# start python script directly
-nohup python3 main.py > ../logs/nowar.log 2>&1
+# # start python script directly
+# nohup python3 main.py > ../logs/nowar.log 2>&1

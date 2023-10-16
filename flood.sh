@@ -25,10 +25,10 @@ run() {
 
   echo ">>>
 
-  Автоматизацію підключено. Скрипт буде перезавантажуватися кожні 15 хв, та оновлюватися - кожну годину.
-  Подивитись логи: ./flood.sh log. Перелік інших команд: ./flood.sh ?
+  Automation is connected. The script will be reloaded every 15 minutes and updated every hour.
+   See logs: ./flood.sh log. List of other commands: ./flood.sh ?
 
-  Слава Україні! Ми переможемо!
+   Glory to Ukraine ;) ! We will win!
 
   <<<"
 }
