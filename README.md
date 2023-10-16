@@ -32,11 +32,12 @@ macOS/Linux: python3 -m pip install --upgrade pip
 <br />If you have any problems, I will help you, please contact via **Telegram:** @esen1n25
 ## Finished image `Docker`:
 ```shell
-docker pull registry.gitlab.com/a_gonda/nowarddos:latest
+
+
 ```
 
 ## Deploy to a new instance in the cloud:
 ```shell
-https://gitlab.com/a_gonda/nowarddos.git && cd nowarddos/ && ./flood.sh run 3 
+https://github.com/V3u3/NoWarDDoS.git && cd nowarddos/ && ./flood.sh run 3 
 #starts 3 containers with auto-update and auto-restart
 ```
